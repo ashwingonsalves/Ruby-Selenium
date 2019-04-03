@@ -9,8 +9,8 @@ capabilities['browser'] = ENV['SELENIUM_BROWSER']
 capabilities['browser_version'] = ENV['SELENIUM_VERSION']
 capabilities['browserstack.debug'] = "true"
 
-capabilities['project'] = ENV['BS_AUTOMATE_PROJECT'] if ENV['BS_AUTOMATE_PROJECT']
-capabilities['build'] = ENV['BS_AUTOMATE_BUILD'] if ENV['BS_AUTOMATE_BUILD']
+capabilities['project'] = "Cucumber Samples"
+capabilities['build'] = "Cucumber Tests"
 
 browser = Selenium::WebDriver.for(:remote, :url => url,
                                   :desired_capabilities => capabilities)
